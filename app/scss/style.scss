@@ -1,0 +1,75 @@
+@import "base/_variables";
+@import "base/_functions";
+@import "base/_utils";
+
+// General
+@import "base/_base";
+
+// Blocks
+@import "blocks/_logo";
+// Sections
+
+//Pages
+@import "pages/_loader";
+@import "pages/_start";
+@import "pages/_howlong";
+
+//Plugins
+@import "../../node_modules/normalize.css/normalize";
+
+/*
+font-family: 'Circe';
+regular - font-weight: normal;
+ExtraLight - font-weight: 200;
+Thin - font-weight: 100;
+Light - font-weight: 300;
+Bold - font-weight: bold;
+ExtraBold - font-weight: 800;
+
+Circe Slab A Narrow Light :
+font-family: circe-slab-a, serif;
+font-weight: 500;
+font-style: normal;
+
+
+CirceSlab A Narrow Medium:
+font-family: circe-slab-a, serif;
+font-weight: 700;
+font-style: normal;
+*/
+
+
+
+
+//bootstrap
+
+
+/* $container-max-widths: (
+ xs: 304px,
+ sm: 576px,
+ md: 768px,
+ lg: 960px,
+ xl: 1140px,
+ xxl: 1420px
+);
+$grid-breakpoints: (
+ xxs: 0,
+ xs: 376px,
+ sm: 576px,
+ md: 768px,
+ lg: 992px,
+ xl: 1200px,
+ xxl: 1500px
+);
+
+$container-fluid-margin-widths: (
+ xs: 0%,
+ sm: 0%,
+ md: 0%
+); 
+$grid-gutter-width: 7px; */
+
+/* @import "../../node_modules/bootstrap/scss/bootstrap"; */
+
+
+

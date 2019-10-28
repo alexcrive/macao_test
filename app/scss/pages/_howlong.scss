@@ -1,0 +1,208 @@
+.how-long-page {
+	border-radius: 12px;
+	background-image: linear-gradient(to bottom, #d71920, #9c00ff);
+	background-position: center;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	color: white;
+}
+
+.how-long-page__main {
+ 	text-align: center;
+ 	flex: 1 0 auto;
+ 	-webkit-justify-content: center;
+ 	        justify-content: center;
+ 	    -webkit-align-items: center;
+ 	            align-items: center;
+	color: white;
+	padding-top: 30px;
+	@media (min-width: 768px) {
+	    padding-top: 50px;
+	}
+	@media (min-width: 992px) {
+	    padding-top: 80px;
+	}
+	@media (min-width: 1200px) {
+	    padding-top: 135px;
+	}
+ }
+.how-long-page__main .container {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+ 	        justify-content: center;
+ 	    -webkit-align-items: center;
+ 	            align-items: center;
+}
+.how-long-page__main__question {
+	font-family: circe-slab-a, serif;
+	font-weight: 700;
+	font-size: 36px;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	margin-bottom: 60px;
+	@media (min-width: 768px) {
+	    font-size: 48px;
+	}
+	@media (min-width: 992px) {
+	    font-size: 56px;
+	}
+}
+ .how-long-page__main__city-days {
+ 	background-image: url(../img/how-long/city-days.png);
+ 	
+ 	background-position: center;
+ 	-webkit-background-size: contain;
+ 	     -o-background-size: contain;
+ 	        background-size: contain;
+ 	background-repeat: no-repeat;
+ 	position: relative;
+ 	margin-bottom: 30px;
+	width: 320px;
+	height: 164px;
+ 	@media (min-width: 576px) {
+		width: 545px;
+    	height: 164px;
+	}
+	@media (min-width: 768px) {
+	    width: 750px;
+ 		height: 164px;
+	}
+ 	&:after {
+ 		content: "";
+ 		position: absolute;
+ 		display: block;
+ 		width: 60px;
+ 		height: 60px;
+ 		background-image: url(../img/how-long/control-elipse.png);
+ 		background-position: center;
+ 		-webkit-background-size: cover;
+ 		     -o-background-size: cover;
+ 		        background-size: cover;
+ 		background-repeat: no-repeat;
+ 		cursor: pointer;
+		bottom: 11%;
+		right: 6%;
+		@media (min-width: 576px) {
+			bottom: -12%;
+    		right: 6%;
+    		width: 88px;
+ 			height: 88px;
+		}
+		@media (min-width: 768px) {
+		    bottom: -24%;
+			right: 6%;
+		}
+ 	}
+}
+.how-long-page__main__city-days--counter {
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	position: absolute;
+	z-index: -1;
+	top: -5%;
+	left: 43%;
+	font-size: 140px;
+	@media (min-width: 576px) {
+		font-size: 170px;
+		top: -10%;
+	}
+	@media (min-width: 768px) {
+		top: -45%;
+		left: 42%;
+	    font-size: 257px;
+	}
+}
+.how-long-page__main__title {
+	font-size: 32px;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	@media (min-width: 576px) {
+		margin-bottom: 20px;
+		font-size: 64px;
+	}
+	@media (min-width: 768px) {
+		font-size: 72px;
+	}
+}
+.how-long-page__main__button {
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	padding: 59px 21px;
+	border: 8px solid #cc55b9;
+	background-color: #950892;
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+	cursor: pointer;
+	
+	font-size: 18px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: normal;
+	outline: none;
+	&:before {
+		content: "";
+		display: block;
+		-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	    width: 154px;
+	    height: 154px;
+	    position: absolute;
+	    top: -6%;
+    	left: -6%;
+		border: 8px solid white;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+		
+	animation: 2s linear 0s normal none infinite running turning-curcle;
+  -webkit-animation: 2s linear 0s normal none infinite running turning-curcle;
+	position: absolute;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		right: 4%;
+		top: 45%;
+		border: 5px solid transparent; 
+		border-left: 6px solid white;
+	}
+}
+
+@keyframes turning-curcle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes how-long-page__main__button {
+  
+}

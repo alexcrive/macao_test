@@ -1,0 +1,19 @@
+@mixin transit($time:0.2s) {
+	-webkit-transition: all $time ease-in;
+       -moz-transition: all $time ease-in;
+        -ms-transition: all $time ease-in;
+         -o-transition: all $time ease-in;
+            transition: all $time ease-in;
+}
+@mixin scaled($size:1.1) {
+	-webkit-transform: scale($size);
+	   -moz-transform: scale($size);
+	    -ms-transform: scale($size);
+	     -o-transform: scale($size);
+	        transform: scale($size);
+}
+
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
