@@ -7,12 +7,14 @@
 
 // Blocks
 @import "blocks/_logo";
+@import "blocks/_button-circle";
 // Sections
 
 //Pages
 @import "pages/_loader";
 @import "pages/_start";
 @import "pages/_howlong";
+@import "pages/_video";
 
 //Plugins
 @import "../../node_modules/normalize.css/normalize";
